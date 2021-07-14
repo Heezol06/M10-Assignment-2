@@ -1,0 +1,191 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* commmon style or utilies  */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+nav {
+  background: #2d25a0;
+  width: 100%;
+}
+.button-name {
+  color: #ffffff;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-------------
+ Nav style 
+ -------------- */
+.manu {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 120px 0 156px;
+}
+.manu-item,
+a:hover {
+  color: #e02c6d;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 36px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.login-button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 123px;
+  height: 44px;
+  color: #ffffff;
+  background-color: #e02c6d;
+}
+.login-button:hover {
+  transform: skewY(-15deg) rotate(10deg);
+
+  color: #e02c6d;
+  background-color: azure;
+  transition-duration: 1.5s;
+  border-radius: 10px;
+}
+
+.nav-title {
+  padding-left: 189px;
+  color: #ffffff;
+}
+.title {
+  font-size: 45px;
+}
+.watch-live-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 44px;
+  background-color: #e02c6d;
+  margin-bottom: 100px;
+}
+.watch-live-button:hover {
+  transform: skewY(-15deg) rotate(10deg);
+  /* background-color: #ffffff; */
+  color: #e02c6d;
+  transition-duration: 1.5s;
+  border-radius: 10px;
+  background-color: azure;
+}
+.banner img {
+  width: 556.01px;
+  height: 438px;
+}
+.nav-poster {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*------------
+ Main Part CSS
+ ------------- */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
+  margin: 100px 90px;
+}
+.player-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px #fefefe;
+}
+
+.player-img img {
+  width: 100%;
+  height: 256px;
+  padding: 5px;
+}
+.player-info {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c6c6c;
+}
+.second-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* --------------
+Highlights Part
+-------------- */
+.highlights-part {
+  display: flex;
+  flex-direction: row;
+}
+.highlights-text {
+  height: 427px;
+  background-image: linear-gradient(#fce4ec, #f06292);
+  border-radius: 15px 0 0 15px;
+}
+.section-img img {
+  width: 567px;
+  height: 427px;
+  border-radius: 0 15px 15px 0;
+}
+/*---------
+ Subscribs part style
+-----------  */
+.subscribe-part {
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 20px;
+  border-left: 10px solid crimson;
+  border-right: 10px solid crimson;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: cornflowerblue;
+}
+/*-----------
+Footer style
+----------- */
+
+.footer-logo img {
+  width: 483.87px;
+  height: 110px;
+  background-color: #f5f5f5;
+}
+.icons {
+  height: 20px;
+  width: 80px;
+  color: #e02c6d;
+  margin-top: 20px;
+}
+/* --------------
+Media Queries
+-------------- */
+@media screen and (max-width: 480px;) {
+  .container {
+    background: green;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header {
+    display: none;
+  }
+}
